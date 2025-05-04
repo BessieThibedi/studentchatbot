@@ -25,25 +25,6 @@ Builds the app for production to the `build` folder.
 ### `npm run eject`
 Ejects the app from react-scripts configuration. **Note: this is a one-way operation.**
 
-## Dependencies
-- react
-- react-dom
-- react-scripts
-- axios
-- botframework-webchat
 
-## Browserslist
-The project supports the following browsers:
 
-### Production
-- >0.2%
-- not dead
-- not op_mini all
 
-### Development
-- last 1 chrome version
-- last 1 firefox version
-- last 1 safari version
-
-## License
-This project is private and does not specify a license.

@@ -1,0 +1,113 @@
+/* Calm color palette */
+:root {
+  --background-color: #f0f4f8;
+  --primary-color: #4a90e2;
+  --secondary-color: #7b8d93;
+  --user-message-bg: #d0e6ff;
+  --bot-message-bg: #ffffff;
+  --input-bg: #ffffff;
+  --input-border: #cbd6e2;
+  --send-button-bg: #4a90e2;
+  --send-button-hover-bg: #357ABD;
+  --text-color: #333333;
+}
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.app-title {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--input-border);
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.chat-window {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--input-border);
+}
+
+.message {
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 20px;
+  font-size: 1rem;
+  line-height: 1.4;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.user-message {
+  background-color: var(--user-message-bg);
+  align-self: flex-end;
+  color: var(--text-color);
+  border-bottom-right-radius: 4px;
+}
+
+.bot-message {
+  background-color: var(--bot-message-bg);
+  align-self: flex-start;
+  color: var(--text-color);
+  border-bottom-left-radius: 4px;
+}
+
+.input-area {
+  display: flex;
+  padding: 12px 20px;
+  background-color: var(--input-bg);
+  border-top: 1px solid var(--input-border);
+}
+
+.input-box {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-box:focus {
+  border-color: var(--primary-color);
+}
+
+.send-button {
+  margin-left: 12px;
+  padding: 10px 20px;
+  background-color: var(--send-button-bg);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: var(--send-button-hover-bg);
+}

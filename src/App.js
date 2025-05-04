@@ -3,7 +3,7 @@ import axios from 'axios';
 
   async function analyzeSentiment(message) {
     const endpoint = "https://mentalhealthai.cognitiveservices.azure.com//text/analytics/v3.1/sentiment";
-    const apiKey = "GCwwZPIsLDuu5uE2AMBxLHcGVimqPDBo6RD2z5SEaAK6RjKojTEIJQQJ99BEACYeBjFXJ3w3AAAEACOGyDpL"; // Replace with secure backend call
+    const apiKey = ""; // Replace with secure backend call
 
   
     const headers = {
